@@ -1,5 +1,7 @@
 package com.hotleshop.UI;
 
+import java.sql.Date;
+
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
@@ -19,8 +21,9 @@ public class SelectPanel extends JPanel {
 		this.add(query);
 	}
 	public void initCom(){
+		
 		sdate=new DateChooser();
-		edate=new DateChooser();
+		edate=new DateChooser(new Date(new java.util.Date().getTime()+24*60*60*1000));//后移一天
 		query=new JButton("查询");
 	}
 	public DateChooser getSdate() {

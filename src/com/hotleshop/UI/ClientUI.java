@@ -24,7 +24,7 @@ public class ClientUI extends JFrame {
 	public void initCom(){
 		sp=new SelectPanel();
 		up=new UserPanel(user.getName());
-		rp=new RoomPanel();
+		//rp=new RoomPanel();
 		rsp=new RoomsPanel(null);
 	}
 	public void initClientUI(){

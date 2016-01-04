@@ -13,4 +13,7 @@ public class RoomDAO {
 	public static void updataRoom(Date d,int status){
 		
 	}
+	public static boolean isStatus(Room r,Date s,Date e){
+		return r.getSdate().after(e)&&r.getEdate().before(s);
+	}
 }

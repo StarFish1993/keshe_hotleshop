@@ -53,12 +53,13 @@ class RoomsTable extends AbstractTableModel{
 	@Override
 	public Object getValueAt(int rowIndex, int columnIndex) {
 		// TODO Auto-generated method stub
+		int sta;
 		if(rooms!=null){
 			Room r=rooms.get(rowIndex);
 			switch(columnIndex){
 			case 0:return r.getRID();
 			case 1:return r.getRM().getPrciec();
-			case 2:return r.getStatus();
+			case 2:return r.getStatus()==0?"Î´Ô¤¶¨":"ÒÑÔ¤¶©";
 			}
 			return null;
 		}

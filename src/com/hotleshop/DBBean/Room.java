@@ -6,7 +6,8 @@ public class Room {
 	private int RID;
 	private RoomModle RM;
 	private int status;
-	private Date date;
+	private Date sdate;
+	private Date edate;
 	public int getRID() {
 		return RID;
 	}
@@ -25,10 +26,16 @@ public class Room {
 	public void setStatus(int status) {
 		this.status = status;
 	}
-	public Date getDate() {
-		return date;
+	public Date getSdate() {
+		return sdate;
 	}
-	public void setDate(Date date) {
-		this.date = date;
+	public void setSdate(Date date) {
+		this.sdate = date;
+	}
+	public Date getEdate() {
+		return edate;
+	}
+	public void setEdate(Date date) {
+		this.edate = date;
 	}
 }

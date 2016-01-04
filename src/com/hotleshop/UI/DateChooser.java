@@ -63,22 +63,22 @@ public class DateChooser extends JPanel {
 	* Creates a new instance of DateChooser 
 	*/  
 	public DateChooser() {  
-			this(new Date());  
+		this(new Date());  
 	}  
 	public DateChooser(Date date){  
 		this(date, "yyyy年MM月dd日");  
-		    }  
-		    public DateChooser(String format){  
-		        this(new Date(), format);  
-		    }  
-		    public DateChooser(Date date, String format){  
-		        initDate=date;  
-		        sdf=new SimpleDateFormat(format);  
-		        select=Calendar.getInstance();  
-		        select.setTime(initDate);  
-		        initPanel();  
-		        initLabel();  
-		    }  
+	}  
+	public DateChooser(String format){  
+		this(new Date(), format);  
+	}  
+	public DateChooser(Date date, String format){  
+		initDate=date;  
+		sdf=new SimpleDateFormat(format);  
+		select=Calendar.getInstance();  
+		select.setTime(initDate);  
+		initPanel();  
+		initLabel();  
+	}  
 		      
 		    /** 
 		     * 是否允许用户选择 
